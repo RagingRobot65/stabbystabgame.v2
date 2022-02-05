@@ -17,7 +17,7 @@ body {
   margin: 1rem;
   font-family: sans-serif;
   line-height: 1.5;
-  background-color: 193, 249, 255;
+  background-color: rgb(193, 249, 255);
 }
 
 /* images and videos max out at full width */
@@ -42,7 +42,7 @@ h1 {
 
 button {
   font-size: 14px;
-  background-color: navy;
-  color: goldenrod;
+  background-color: "navy";
+  color: "goldenrod";
   margin-bottom: 0;
 }
