@@ -2,7 +2,7 @@ console.log("Welcome to the Stab Zone!");
 
 //Health & Damage Vars
 var enemyHealth = 270;
-var playerHealth = 300;
+var playerHealth = 200;
 var enDamage = 0;
 var vicEl = false;
 
