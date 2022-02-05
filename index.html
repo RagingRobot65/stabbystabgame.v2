@@ -6,25 +6,45 @@
     <link rel="icon" href="https://glitch.com/favicon.ico" />
 
     <title>Stabby Stab Game</title>
-
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
+    <link rel="stylesheet" href="style.css" />
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    
+	<script type="text/javascript" src="script.js" defer></script>
+	<script type="text/javascript" src="sketch.js" defer></script>
+    <!--For p5.js-->
+	
   </head>
   <body>
     <h1>Stabby Stab Game</h1>
 
-    <p class="fancyBold" id="info">Press the buttons to attack your enemy. Kill him before he kills you.</p>
-
-    <button id="stab" class="button" title="High Damage, Low Hit Chance">Stab</button>
-    <button id="slash" class="button" title="Low damage, High Hit Chance">Slash</button>
-    <button id="stun" class="button" title="Stuns Enemy For 2 Turns, High Chance, One-Time Use">Stun</button>
-    <button id="powerstrike" class="button">Power Strike!</button><br /><br />
-    <!--<button id="dodge" class="button">Dodge</button>
-    <button id="jump" class="button">Jump</button>
-    <button id="block" class="button">Block</button>
+    <p class="fancyBold" id="info">
+      Press the buttons to attack your enemy. Kill him before he kills you.<br />
+    </p>
+    <!--<canvas id="canvas" width="400" height="400"></canvas>-->
+    <button id="stab" class="action" title="High Damage, Low Hit Chance">
+      Stab
+    </button>
+    <button id="slash" class="action" title="Low damage, High Hit Chance">
+      Slash
+    </button>
+    <button
+      id="stun"
+      class="action"
+      title="Stuns Enemy For 2 Turns, High Chance, One-Time Use"
+    >
+      Stun
+    </button>
+    <button
+      id="powerstrike"
+      class="action"
+      title="Super High Damage, Super Low Chance">
+      Power Strike!
+    </button>
+    <button id="dodge" class="reaction" title="High Chance, Low Health Regain">Dodge</button>
+    <button id="jump" class="reaction" title="Low Chance, High Health Regain">Jump</button>
+    <!--<button id="block" class="button">Block</button>
     <button id="deflect" class="button">Deflect</button>-->
     <p id="enHp" class="fancyBold"></p>
     <p id="pHp" class="fancyBold"></p>
